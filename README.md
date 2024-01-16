@@ -16,3 +16,7 @@ Para rodar a aplicação localmente você deve abrir três terminais diferentes,
 Nos dois seguintes terminais dê o comando `cargo run --bin cliente` e comece a jogar!
 
 Para executar a aplicação em sua rede, é necessário ajustar o endereço IP registrado na variável `server_ip` no arquivo `/src/bin/server.rs`. Além disso, é preciso editar o IP registrado na variável `meu_ip` em `/src/bin/cliente.rs`. Após essas modificações, a aplicação estará pronta para ser utilizada. Agora você pode desfrutar de um truquinho desenvolvido Rust na sua rede local ou, se preferir, executar a aplicação utilizando o IP de uma rede virtual gerado por serviços como Hamachi ou Haguichi.
+
+## Screenshots
+
+![Jogao.png](Jogao.png)
