@@ -1,3 +1,9 @@
+# Desenvolvedores
+* Luan Mark
+  * github: [@Lord-Mark](https://github.com/Lord-Mark)
+* João Neves Soares
+  * github: [@JoaoNevesSoares](https://github.com/JoaoNevesSoares)
+
 # Configurando seu ambiente
 Para rodar este projeto você precisa ter o ambiente rust configurado,
 se você não tem o rust ou o cargo instalado, então siga as instruções em https://www.rust-lang.org/tools/install
