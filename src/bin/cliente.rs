@@ -108,8 +108,9 @@ fn process_server_message(stream: &TcpStream) -> ServerMessage {
     received_msg
 }
 fn main() {
+    let meu_ip: &str = "127.0.0.1:7878";
     let serialize = |msg| serde_json::to_string(&msg).unwrap();
-    let mut stream = TcpStream::connect("172.24.101.32:7878").unwrap();
+    let mut stream = TcpStream::connect(meu_ip).unwrap();
 
     let mut username = String::new();
 
@@ -347,7 +348,7 @@ fn main() {
             }
         }
 
-        stream = TcpStream::connect("172.24.101.32:7878").unwrap();
+        stream = TcpStream::connect(meu_ip).unwrap();
         stream.write(msg.as_bytes()).unwrap();
     }
 }

@@ -136,6 +136,7 @@ fn process_client_message(stream: &TcpStream) -> ClientMessage {
     received_msg
 }
 fn main() {
+    let server_ip: &str = "127.0.0.1:7878";
     let serialize = |msg| serde_json::to_string(&msg).unwrap();
 
     let mut played_cards = Vec::new();
@@ -150,7 +151,7 @@ fn main() {
     // let qnt_players = 2;
 
     //Substituir pelo ip local
-    let listen = TcpListener::bind("172.24.101.32:7878").unwrap(); //
+    let listen = TcpListener::bind(server_ip).unwrap(); //
 
     let mut baralho;
     let mut manilha = Carta {
